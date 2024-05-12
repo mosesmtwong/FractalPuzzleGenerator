@@ -7,7 +7,8 @@ ruleB = "+A-BB--B-A++A+B"
 
 ITER = 5
 
-setup(5000, 5000)
+setup(2000, 2000)
+print(window_width())
 penup()
 goto(100, 100)
 pendown()
@@ -27,7 +28,7 @@ tracer(0, 0)
 hideturtle()
 for chr in axiom:
     if chr == "A" or chr == "B":
-        forward(10)
+        forward(5)
     elif chr == "+":
         left(60)
     elif chr == "-":
